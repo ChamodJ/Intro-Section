@@ -12,7 +12,7 @@ import reminders from './icon-reminders.svg'
 import todo from './icon-todo.svg'
 import image_hero_dec from './image-hero-desktop.png'
 import image_hero_mob from './image-hero-mobile.png'
-import logo from './images/logo.svg'
+import logo from './logo.svg'
 
 export {
     c_audiophile,
