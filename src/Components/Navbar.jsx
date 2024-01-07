@@ -37,12 +37,12 @@ const Navbar = () => {
             </div>
             
 
-            <div className='flex justify-between '>
-                <div className='mr-[15px] hover:text-ABlack' >
+            <div className='flex justify-between items-center'>
+                <div className='mr-[25px] hover:text-ABlack' >
                     <a href='#'>Login</a>
                 </div>
 
-                <div className='border-1 hover:text-ABlack'>
+                <div className='border-[1px] border-black rounded-[12px] px-[10px] py-[5px] hover:text-ABlack'>
                     <a href='#'>Register</a>
                 </div>
             </div>
