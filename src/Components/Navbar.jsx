@@ -6,8 +6,6 @@ import {logo, arrow_down, arrow_up, todo, calender, reminders, planning } from '
 const Navbar = () => {
     const [navToggleF, setNavtoggleF] = useState(false)
     const [navToggleC, setNavtoggleC] = useState(false)
-    const [hiddenMenuF, sethiddenMenuF] = useState(false)
-    const [hiddenMenuC, sethiddenMenuC] = useState(false)
 
     return (
         //Navbar Main
@@ -24,7 +22,7 @@ const Navbar = () => {
                     <ul className='flex justify-start items-start cursor-pointer '>
 
                         {/* Features */}
-                        <li className='mr-[20px]' onClick={() => {setNavtoggleF ((prev) => !prev);sethiddenMenuF ((prev) => !prev)}}>
+                        <li className='mr-[20px]' onClick={() => {setNavtoggleF ((prev) => !prev); ((prev) => !prev)}}>
                             <div className=' flex justify-center items-center hover:text-ABlack hover:font-bold'>
                                 <a href='#'>Features</a>
                                 <img    src={navToggleF ? arrow_up : arrow_down} 
@@ -33,7 +31,7 @@ const Navbar = () => {
                             </div>
 
                             {/* Features hidden compartment */}
-                            <div className={`${hiddenMenuF ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[90px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
+                            <div className={`${navToggleF ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[90px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
     
                                 {/* Features-Todo */}
                                 <div className='flex justify-start items-center'>
@@ -64,7 +62,7 @@ const Navbar = () => {
                         </li>
 
                         {/* Company */}
-                        <li className='mr-[20px] flex justify-center items-center ' onClick={() => { setNavtoggleC ((prev) => !prev) ; sethiddenMenuC ((prev) => !prev)}}>
+                        <li className='mr-[20px] flex justify-center items-center ' onClick={() => { setNavtoggleC ((prev) => !prev) ;  ((prev) => !prev)}}>
                             <div className=' flex justify-center items-center hover:text-ABlack hover:font-bold'>
                                 <p><a href='#'>Company</a></p>
                                 <img    src={navToggleC ? arrow_up : arrow_down} 
@@ -73,7 +71,7 @@ const Navbar = () => {
                             </div>
                         
                             {/* Company hidden compartment */}
-                            <div className={`${hiddenMenuC ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[290px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
+                            <div className={`${navToggleC ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[290px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
                                 <p className='hover:text-ABlack hover:font-bold'><a href='#'>Histrory</a></p>
                                 <p className='hover:text-ABlack hover:font-bold'><a href='#'>Our Team</a></p>
                                 <p className='hover:text-ABlack hover:font-bold'><a href='#'>Blog</a></p>
