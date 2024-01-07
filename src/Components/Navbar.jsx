@@ -5,7 +5,9 @@ import {logo, arrow_down, arrow_up, todo, calender, reminders, planning } from '
 import Dropdown from './Dropdown'
 
 const Navbar = () => {
+    //Feature Toggle
     const [navToggleF, setNavtoggleF] = useState(false)
+    //Company Toggle
     const [navToggleC, setNavtoggleC] = useState(false)
 
     const featuresList = [
@@ -23,7 +25,7 @@ const Navbar = () => {
 
     return (
         //Navbar Main
-        <div className='w-full flex justify-between text-center items-start text-MGray text-[0.8rem]'>
+        <div className='w-full flex justify-between text-center items-start text-MGray text-[0.9rem]'>
 
             {/* Logo Section */}
             <div className='flex justify-start items-start flex-1'>
