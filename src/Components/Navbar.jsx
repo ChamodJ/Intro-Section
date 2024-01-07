@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
 
             {/*Navbar Main Mobile*/}
-            <div className='sm:hidden flex justify-between items-center'>
+            <div className='sm:hidden flex justify-between items-start'>
                 <div className='w-[150px]'>
                     <img src={logo} />
                 </div>
