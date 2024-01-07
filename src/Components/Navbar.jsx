@@ -7,6 +7,7 @@ const Navbar = () => {
     const [navToggleF, setNavtoggleF] = useState(false)
     const [navToggleC, setNavtoggleC] = useState(false)
     const [hiddenMenuF, sethiddenMenuF] = useState(false)
+    const [hiddenMenuC, sethiddenMenuC] = useState(false)
 
     return (
         //Navbar Main
@@ -32,12 +33,12 @@ const Navbar = () => {
                             </div>
 
                             {/* Features hidden compartment */}
-                            <div className={`${hiddenMenuF ? 'block' : 'hidden'} border-[1px] border-MGray py-[15px] px-[25px] leading-[2rem] `}>
-        
+                            <div className={`${hiddenMenuF ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[90px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
+    
                                 {/* Features-Todo */}
                                 <div className='flex justify-start items-center'>
                                     <img src={todo} className='w-[15px] h-[15px] mr-[10px]' />
-                                    <p>
+                                    <p className='hover:text-ABlack hover:font-bold'>
                                         <a href='#'>Todo List</a>
                                     </p>
                                 </div>
@@ -45,29 +46,38 @@ const Navbar = () => {
                                 {/* Features-Calender */}
                                 <div className='flex justify-start items-center'>
                                     <img src={calender} className='w-[15px] h-[15px] mr-[10px]'/>
-                                    <p><a href='#'>Calender</a></p>
+                                    <p className='hover:text-ABlack hover:font-bold'><a href='#'>Calender</a></p>
                                 </div>
 
                                 {/* Features-Reminders */}
                                 <div className='flex justify-start items-center'>
                                     <img src={reminders} className='w-[15px] h-[15px] mr-[10px]' />
-                                    <p><a href='#'>Reminders</a></p>
+                                    <p className='hover:text-ABlack hover:font-bold'><a href='#'>Reminders</a></p>
                                 </div>
 
                                 {/* Features-Planning */}
                                 <div className='flex justify-start items-center'>
                                     <img src={planning} className='w-[15px] h-[15px] mr-[10px]' />
-                                    <p><a href='#'>Planning</a></p>
+                                    <p className='hover:text-ABlack hover:font-bold'><a href='#'>Planning</a></p>
                                 </div>
                             </div>
                         </li>
 
                         {/* Company */}
-                        <li className='mr-[20px] flex justify-center items-center hover:text-ABlack hover:font-bold' onClick={() => setNavtoggleC ((prev) => !prev)}>
-                            <a href='#'>Company</a>
-                            <img    src={navToggleC ? arrow_up : arrow_down} 
-                                    className='w-[10px] h-[10px] ml-[5px]'
-                                    />
+                        <li className='mr-[20px] flex justify-center items-center ' onClick={() => { setNavtoggleC ((prev) => !prev) ; sethiddenMenuC ((prev) => !prev)}}>
+                            <div className=' flex justify-center items-center hover:text-ABlack hover:font-bold'>
+                                <p><a href='#'>Company</a></p>
+                                <img    src={navToggleC ? arrow_up : arrow_down} 
+                                        className='w-[10px] h-[10px] ml-[5px]'
+                                />
+                            </div>
+                        
+                            {/* Company hidden compartment */}
+                            <div className={`${hiddenMenuC ? 'absolute' : 'hidden'} py-[15px] px-[25px] leading-[2rem] left-[290px] top-[40px] shadow-2xl rounded-md outline-none border-none`}>
+                                <p className='hover:text-ABlack hover:font-bold'><a href='#'>Histrory</a></p>
+                                <p className='hover:text-ABlack hover:font-bold'><a href='#'>Our Team</a></p>
+                                <p className='hover:text-ABlack hover:font-bold'><a href='#'>Blog</a></p>
+                            </div>
                         </li>
 
                         {/* Careers */}
