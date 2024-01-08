@@ -28,12 +28,12 @@ const Navbar = () => {
     return (
         <div>
             {/*Navbar Main Desktop*/}
-            <div className='w-full flex justify-between text-center items-start text-MGray text-[0.9rem] hidden sm:flex'>
+            <div className='w-full flex justify-between text-center items-start text-MGray hidden sm:flex'>
 
                 {/* Logo Section */}
                 <div className='flex justify-start items-start flex-1'>
-                    <div className='w-[150px]'>
-                        <img src={logo} />
+                    <div className='w-[150px] h-full'>
+                        <img src={logo} className='w-[100px] h-full'/>
                     </div>
 
                 {/* Nav links */}
@@ -41,7 +41,7 @@ const Navbar = () => {
                         <ul className='flex justify-start items-start cursor-pointer '>
 
                             {/* Features */}
-                            <li className='mr-[20px]' onClick={() => setNavtoggleF ((prev) => !prev)}>
+                            <li className='mr-[25px]' onClick={() => setNavtoggleF ((prev) => !prev)}>
                                 <div className=' flex justify-center items-center hover:text-ABlack hover:font-bold'>
                                     <a href='#'>Features</a>
                                     <img    src={navToggleF ? arrow_up : arrow_down} 
@@ -54,7 +54,7 @@ const Navbar = () => {
                             </li>
 
                             {/* Company */}
-                            <li className='mr-[20px] flex justify-center items-center ' onClick={() => setNavtoggleC ((prev) => !prev)}>
+                            <li className='mr-[25px] flex justify-center items-center ' onClick={() => setNavtoggleC ((prev) => !prev)}>
                                 <div className=' flex justify-center items-center hover:text-ABlack hover:font-bold'>
                                     <p><a href='#'>Company</a></p>
                                     <img    src={navToggleC ? arrow_up : arrow_down} 
@@ -66,10 +66,10 @@ const Navbar = () => {
                             </li>
 
                             {/* Careers */}
-                            <li className='mr-[20px] hover:text-ABlack hover:font-bold'><a href='#'>Careers</a></li>
+                            <li className='mr-[25px] hover:text-ABlack hover:font-bold'><a href='#'>Careers</a></li>
 
                             {/* About */}
-                            <li className='mr-[20px] hover:text-ABlack hover:font-bold'><a href='#'>About</a></li>
+                            <li className='mr-[25px] hover:text-ABlack hover:font-bold'><a href='#'>About</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <div className='flex justify-between items-center'>
 
                     {/* Login Link */}
-                    <div className='mr-[25px] hover:text-ABlack hover:font-bold' >
+                    <div className='mr-[30px] hover:text-ABlack hover:font-bold' >
                         <a href='#'>Login</a>
                     </div>
 
@@ -91,14 +91,53 @@ const Navbar = () => {
             </div>
 
             {/*Navbar Main Mobile*/}
-            <div className='sm:hidden flex justify-between items-start'>
+            <div className='sm:hidden flex justify-between items-start '>
                 <div className='w-[150px]'>
                     <img src={logo} />
                 </div>
 
-                <div onClick={() => setmenuToggleM ((prev) => !prev)}>
+                <div className='z-20' onClick={() => setmenuToggleM ((prev) => !prev)}>
                     <img src={menuToggleM ? menu_close : menu} />
                 </div>
+                {/*Navbar Mobile*/}
+                <div className={`${menuToggleM ? 'flex' : 'hidden'} fixed h-screen w-3/4 right-0 top-0 bg-slate-500 z-0 flex `}>
+
+                    {/* Nav links */}
+                    <div>
+                        <ul className='flex flex-col justify-end  cursor-pointer mt-[70px]'>
+
+                            {/* Features */}
+                            <li className='mb-[15px] ' onClick={() => setNavtoggleF ((prev) => !prev)}>
+                                <div className=' flex justify-center items-center hover:text-ABlack'>
+                                    <a href='#'>Features</a>
+                                    <img    src={navToggleF ? arrow_up : arrow_down} 
+                                            className='w-[10px] h-[10px] ml-[5px]'
+                                    />
+                                </div>
+
+                            </li>
+
+                            {/* Company */}
+                            <li className='mb-[15px]  flex justify-center items-center ' onClick={() => setNavtoggleC ((prev) => !prev)}>
+                                <div className=' flex justify-center items-center hover:text-ABlack'>
+                                    <p><a href='#'>Company</a></p>
+                                    <img    src={navToggleC ? arrow_up : arrow_down} 
+                                            className='w-[10px] h-[10px] ml-[5px]'
+                                    />
+                                </div>
+
+                            </li>
+
+                            {/* Careers */}
+                            <li className='mb-[15px]  hover:text-ABlack'><a href='#'>Careers</a></li>
+
+                            {/* About */}
+                            <li className='mb-[15px]  hover:text-ABlack'><a href='#'>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            
             </div>
         </div>
        
