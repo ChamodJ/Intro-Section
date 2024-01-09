@@ -100,33 +100,64 @@ const Navbar = () => {
                     <img src={menuToggleM ? menu_close : menu} />
                 </div>
                 {/*Navbar Mobile*/}
-                <div className={`${menuToggleM ? 'flex' : 'hidden'} fixed h-screen w-3/4 right-0 top-0 bg-slate-500 z-0 flex `}>
+                <div className={`${menuToggleM ? 'flex' : 'hidden'} fixed h-screen w-full right-0 top-0 bg-black bg-opacity-[0.6] z-0 flex `}>
+
+                    <div className='w-1/4 '></div>
 
                     {/* Nav links */}
-                    <div>
-                        <ul className='flex flex-col justify-end  cursor-pointer mt-[70px]'>
+                    <div className='w-3/4 bg-white px-[30px] text-[1.1rem] text-MGray'>
+                        <ul className='flex flex-col items-start  cursor-pointer mt-[70px]  '>
 
                             {/* Features */}
-                            <li className='mb-[15px] ' onClick={() => setNavtoggleF ((prev) => !prev)}>
-                                <div className=' flex justify-center items-center hover:text-ABlack'>
+                            <li className='mb-[15px] w-full' onClick={() => setNavtoggleF ((prev) => !prev)}>
+                                <div className=' flex justify-strat items-center hover:text-ABlack'>
                                     <a href='#'>Features</a>
                                     <img    src={navToggleF ? arrow_up : arrow_down} 
                                             className='w-[10px] h-[10px] ml-[5px]'
                                     />
                                 </div>
+                                
+                                <div className={`${navToggleF ? 'block' : 'hidden'} ml-[20px]`}>
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <img src={todo} className={`w-[15px] h-[15px] mr-[10px]`} />
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>Todo List</a>
+                                        </p>
+                                    </div>
 
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <img src={todo} className={`w-[15px] h-[15px] mr-[10px]`} />
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>Todo List</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </li>
 
                             {/* Company */}
-                            <li className='mb-[15px]  flex justify-center items-center ' onClick={() => setNavtoggleC ((prev) => !prev)}>
-                                <div className=' flex justify-center items-center hover:text-ABlack'>
-                                    <p><a href='#'>Company</a></p>
-                                    <img    src={navToggleC ? arrow_up : arrow_down} 
+                            <li className='mb-[15px] w-full' onClick={() => setNavtoggleC ((prev) => !prev)}>
+                                <div className=' flex justify-strat items-center hover:text-ABlack'>
+                                    <a href='#'>Company</a>
+                                    <img    src={navToggleF ? arrow_up : arrow_down} 
                                             className='w-[10px] h-[10px] ml-[5px]'
                                     />
                                 </div>
+                                
+                                <div className={`${navToggleC ? 'block' : 'hidden'} ml-[20px]`}>
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>History</a>
+                                        </p>
+                                    </div>
 
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>History</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </li>
+
 
                             {/* Careers */}
                             <li className='mb-[15px]  hover:text-ABlack'><a href='#'>Careers</a></li>
@@ -134,6 +165,19 @@ const Navbar = () => {
                             {/* About */}
                             <li className='mb-[15px]  hover:text-ABlack'><a href='#'>About</a></li>
                         </ul>
+
+                        {/* Button Section */}
+                        <div className='flex flex-col items-center text-center'>
+                            {/* Login Link */}
+                            <div className='mr-[30px] hover:text-ABlack hover:font-bold w-full mb-[20px] ' >
+                                <a href='#'>Login</a>
+                            </div>
+
+                            {/* Register Link */}
+                            <div className='border-[1px] border-MGray rounded-[12px] px-[10px] py-[5px] hover:text-ABlack hover:border-ABlack hover:font-bold w-full'>
+                                <a href='#'>Register</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
