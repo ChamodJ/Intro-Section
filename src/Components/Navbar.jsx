@@ -26,7 +26,7 @@ const Navbar = () => {
     ]
 
     return (
-        <div>
+        <div className='p-[25px]'>
             {/*Navbar Main Desktop*/}
             <div className='w-full h-[50px] py-[5px] flex justify-between text-center items-center text-MGray hidden sm:flex'>
 
