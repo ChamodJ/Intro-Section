@@ -1,5 +1,5 @@
 import React from 'react'
-import { image_hero_dec } from '../images'
+import { c_audiophile, c_databiz, c_maker, c_meet, image_hero_dec } from '../images'
 
 const Intro = () => {
   return (
@@ -10,8 +10,17 @@ const Intro = () => {
 
         <p className='text-MGray w-[350px] leading-5 my-[25px]'>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
 
+        {/* Learn More Btn */}
         <div className='w-[140px] border-[2px] border-ABlack  rounded-[12px] px-[15px] py-[10px] bg-ABlack text-AWhite font-bold text-center hover:bg-AWhite hover:text-ABlack'>
           <p><a href=''>Learn More</a></p>
+        </div>
+
+        {/* Brands Div */}
+        <div className='flex justify-between items-center w-[400px] mt-[50px]'>
+          <div className='w-[80px]'><img src={c_databiz} /></div>
+          <div className='w-[80px]'><img src={c_audiophile} /></div>
+          <div className='w-[80px]'><img src={c_meet} /></div>
+          <div className='w-[80px]'><img src={c_maker} /></div>
         </div>
       </div>
 
