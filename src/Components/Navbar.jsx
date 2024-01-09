@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <div>
             {/*Navbar Main Desktop*/}
-            <div className='w-full h-[50px] py-[5px] flex justify-between text-center items-start text-MGray hidden sm:flex'>
+            <div className='w-full h-[50px] py-[5px] flex justify-between text-center items-center text-MGray hidden sm:flex'>
 
                 {/* Logo Section */}
                 <div className='flex justify-start items-start flex-1'>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 
 
                 {/* Button Section */}
-                <div className='flex justify-between items-start'>
+                <div className='flex justify-between items-center'>
 
                     {/* Login Link */}
                     <div className='mr-[30px] hover:text-ABlack hover:font-bold' >
@@ -167,9 +167,9 @@ const Navbar = () => {
                         </ul>
 
                         {/* Button Section */}
-                        <div className='flex flex-col items-center text-center'>
+                        <div className='flex flex-col justify-center items-center text-center'>
                             {/* Login Link */}
-                            <div className='mr-[30px] hover:text-ABlack hover:font-bold w-full mb-[20px] ' >
+                            <div className='mr-[30px] hover:text-ABlack hover:font-bold w-full mb-[20px] px-[10px] py-[5px]' >
                                 <a href='#'>Login</a>
                             </div>
 
