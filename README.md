@@ -30,7 +30,7 @@ Users should be able to:
 
 <img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/1ce07eb3-a067-4bdc-8642-f9d539750bdc" alt="localhost_5173_(iPhone 14 Pro Max) (1)" width="300" />
 
-<img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/22d91f6a-925d-496b-8ca1-56311b811596" alt="localhost_5173_" width="300" />
+<img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/22d91f6a-925d-496b-8ca1-56311b811596" alt="localhost_5173_" />
 
 
 ### Links
