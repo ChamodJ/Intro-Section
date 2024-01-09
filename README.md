@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ChamodJ/Blog-Preview-Card]
-- Live Site URL: [https://blog-preview-card-frontendmentor.netlify.app/]
+- Solution URL: [https://github.com/ChamodJ/Intro-Section]
+- Live Site URL: [https://snapfrontendmentorchal.netlify.app/]
 
 ## My process
 
