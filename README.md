@@ -24,11 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![localhost_5173_(iPhone 14 Pro Max) (1)](https://github.com/ChamodJ/Intro-Section/assets/121800679/1ce07eb3-a067-4bdc-8642-f9d539750bdc)
+### Screenshot
 
-![localhost_5173_(iPhone 14 Pro Max)](https://github.com/ChamodJ/Intro-Section/assets/121800679/a24ef5a9-606d-4fe2-b221-a40e3db5c57e)
+<img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/a24ef5a9-606d-4fe2-b221-a40e3db5c57e" alt="localhost_5173_(iPhone 14 Pro Max)" width="300" />
 
-![localhost_5173_](https://github.com/ChamodJ/Intro-Section/assets/121800679/22d91f6a-925d-496b-8ca1-56311b811596)
+<img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/1ce07eb3-a067-4bdc-8642-f9d539750bdc" alt="localhost_5173_(iPhone 14 Pro Max) (1)" width="300" />
+
+<img src="https://github.com/ChamodJ/Intro-Section/assets/121800679/22d91f6a-925d-496b-8ca1-56311b811596" alt="localhost_5173_" width="300" />
+
 
 ### Links
 
