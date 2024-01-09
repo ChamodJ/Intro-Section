@@ -96,8 +96,8 @@ const Navbar = () => {
                     <img src={logo} />
                 </div>
 
-                <div className='z-20' onClick={() => setmenuToggleM ((prev) => !prev)}>
-                    <img src={menuToggleM ? menu_close : menu} />
+                <div className='z-20 mr-[25px]' onClick={() => setmenuToggleM ((prev) => !prev)}>
+                    <img src={menuToggleM ? menu_close : menu} className={`${setmenuToggleM ? 'fixed' : 'static'}`}/>
                 </div>
                 {/*Navbar Mobile*/}
                 <div className={`${menuToggleM ? 'flex' : 'hidden'} fixed h-screen w-full right-0 top-0 bg-black bg-opacity-[0.6] z-0 flex `}>
@@ -126,11 +126,26 @@ const Navbar = () => {
                                     </div>
 
                                     <div className='flex justify-start items-center mt-[10px]'>
-                                        <img src={todo} className={`w-[15px] h-[15px] mr-[10px]`} />
+                                        <img src={calender} className={`w-[15px] h-[15px] mr-[10px]`} />
                                         <p className='hover:text-ABlack hover:font-bold'>
-                                            <a href='#'>Todo List</a>
+                                            <a href='#'>Calender</a>
                                         </p>
                                     </div>
+                                    
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <img src={reminders} className={`w-[15px] h-[15px] mr-[10px]`} />
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>Reminders</a>
+                                        </p>
+                                    </div>
+
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <img src={planning} className={`w-[15px] h-[15px] mr-[10px]`} />
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>Planning</a>
+                                        </p>
+                                    </div>
+
                                 </div>
                             </li>
 
@@ -152,7 +167,13 @@ const Navbar = () => {
 
                                     <div className='flex justify-start items-center mt-[10px]'>
                                         <p className='hover:text-ABlack hover:font-bold'>
-                                            <a href='#'>History</a>
+                                            <a href='#'>Our Team</a>
+                                        </p>
+                                    </div>
+
+                                    <div className='flex justify-start items-center mt-[10px]'>
+                                        <p className='hover:text-ABlack hover:font-bold'>
+                                            <a href='#'>Blog</a>
                                         </p>
                                     </div>
                                 </div>
