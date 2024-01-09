@@ -84,7 +84,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Register Link */}
-                    <div className='border-[1px] border-MGray rounded-[12px] px-[10px] py-[5px] hover:text-ABlack hover:border-ABlack hover:font-bold'>
+                    <div className='border-[1px] border-MGray rounded-[12px] px-[10px] py-[5px] hover:text-ABlack hover:border-ABlack hover:font-bold text-center'>
                         <a href='#'>Register</a>
                     </div>
                 </div>
