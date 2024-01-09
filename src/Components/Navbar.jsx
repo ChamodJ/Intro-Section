@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <div>
             {/*Navbar Main Desktop*/}
-            <div className='w-full flex justify-between text-center items-start text-MGray hidden sm:flex'>
+            <div className='w-full h-[50px] py-[5px] flex justify-between text-center items-start text-MGray hidden sm:flex'>
 
                 {/* Logo Section */}
                 <div className='flex justify-start items-start flex-1'>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 
 
                 {/* Button Section */}
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-start'>
 
                     {/* Login Link */}
                     <div className='mr-[30px] hover:text-ABlack hover:font-bold' >
@@ -138,7 +138,7 @@ const Navbar = () => {
                             <li className='mb-[15px] w-full' onClick={() => setNavtoggleC ((prev) => !prev)}>
                                 <div className=' flex justify-strat items-center hover:text-ABlack'>
                                     <a href='#'>Company</a>
-                                    <img    src={navToggleF ? arrow_up : arrow_down} 
+                                    <img    src={navToggleC ? arrow_up : arrow_down} 
                                             className='w-[10px] h-[10px] ml-[5px]'
                                     />
                                 </div>

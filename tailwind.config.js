@@ -10,7 +10,11 @@ export default {
         'AWhite': 'hsl(0, 0%, 98%)',
         'MGray': 'hsl(0, 0%, 41%)',
         'ABlack': 'hsl(0, 0%, 8%)'
-      }
+      },
+
+      screens: {
+        'sm' : '710px'
+      },
     },
   },
   plugins: [],
